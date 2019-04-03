@@ -1,0 +1,17 @@
+pipeline {
+    agent any 
+    stages {
+        stage('Example Build') {
+            steps {
+                echo 'Hello,World, this is build stage'
+                sh 'ls -lrt'
+            }
+        }
+        stage('Example Test') {
+           steps {
+                echo 'Hello,World, this is test stage'
+                sh 'ls -lrt'
+            }
+        }
+    }
+}
