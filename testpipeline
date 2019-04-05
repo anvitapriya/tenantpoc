@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Example Test') {
            steps {
-                echo 'Hello,World, this is test stage'
+                echo 'Hello,World, this is test stage,,,,,hello'
                 sh 'pwd && ls -lrt'
             }
         }
